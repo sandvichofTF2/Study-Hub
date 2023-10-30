@@ -1,117 +1,134 @@
-.header{
-    position:fixed;
+/* Header shenanigans */
+header {
+    position: fixed;
     display: flex;
     background-color: #006660;
-    width:100%;
-    justify-content:space-between;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    top:0;
+    top: 0;
     font-size: 20px;
     color: white;
     text-decoration: none;
 }
-.icon img{
+
+.icon img {
     width: 85px;
 }
-.logo{
+
+.logo {
     animation-name: spin;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
+/* SEARCH */
+.searchbar button img {
+    width: 35px;
+}
 
-@keyframes spin { 
-    from { 
-        transform: rotate(0deg); 
-    } to { 
-        transform: rotate(360deg); 
+.option img {
+    padding-top: 20px;
+    padding-right: 60px;
+    width: 55px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }
 
-/* body shenanigaisn */
-
-.menu-main{
+.menu-main {
     display: flex;
     padding-top: 20px;
     padding-left: 10px;
 }
-textarea{
-    resize:none;
+
+textarea {
+    resize: none;
 }
-.menu-main #Home {
+
+.menu-main li {
     text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    font-family: 'Open Sans';
 }
-.searchbar{
+.menu-main a{
+    text-decoration: none;
+    color: white;
+}
+
+.searchbar {
     display: flex;
     height: 50px;
     font-size: 25px;
     margin-top: 20px;
 }
-/* .searchbar #search{
-    margin-left: 200% !important;
-} */
 
-.left-options{
+/* .searchbar #search{
+        margin-left: 200% !important;
+    } */
+
+.left-options {
     width: 80%;
-    display:flex;
+    display: flex;
     justify-content: flex-start;
 }
-.right-options{
+
+.right-options {
     width: 30%;
-    display:flex;
+    display: flex;
     justify-content: space-between;
 }
-/* .option{
-    display: flex;
-    justify-content: flex-end;
-} */
 
-/* SEARCH */
-.searchbar button img{
-    width: 35px;
-}
-
-
-.option img{
-    padding-top: 20px;
-    padding-right: 60px;
-    width: 55px;
-}
-.footer{
+/* Footer */
+footer {
     width: 100%;
-    bottom:0px ;
+    bottom: 0px;
     position: relative;
     text-align: center;
     background-color: #006660;
-    color:black;
+    color: black;
     font-size: 7px;
     margin-top: auto;
 }
-.footer h1{
+
+footer h1 {
     text-align: center;
 }
+
+
 /* main body aka content (fetured */
-body{
+body {
     background-color: whitesmoke;
     /* background: url;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: center;  */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-position: center;  */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-.test h1{
+
+.test h1 {
     font-size: 3em;
 }
-.contents{
+
+.contents {
     padding: 100px;
-    background-image:url("../IMG/cool-background.png");
+    background-image: url("../IMG/cool-background.png");
     background-color: rgb(221, 221, 221);
 }
+
 .welcome {
     display: flex;
     justify-content: center;
@@ -121,60 +138,75 @@ body{
     color: black;
     font-size: 40px;
 }
-.featured{
+
+.featured {
     display: flex;
     justify-content: space-between;
 }
-.featured div.left{
+
+.featured div.left {
     width: 50%;
 }
-.featured div.right{
+
+.featured div.right {
     width: 50%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
 }
-.right div.st1, .right div.nd2{
-    width:50%;
+
+.right div.st1,
+.right div.nd2 {
+    width: 50%;
 }
-.featured div{
+
+.featured div {
     margin-right: 20px;
     height: 100%;
 }
-.right img:nth-child(2){
+
+.right img:nth-child(2) {
     width: 100%;
 }
-.right img{
+
+.right img {
     padding: 5px;
-    width:100%
+    width: 100%
 }
-.left img{
+
+.left img {
     width: 75%;
 }
+
 /* Content (normal) */
-.manga h3{
+.manga h3 {
     text-align: center;
-    color:black;
+    color: black;
 }
+
 .manga div.image {
     display: flex;
-    width:10%;
+    width: 10%;
 }
-.manga div.image img{
+
+.manga div.image img {
     width: 100%;
     margin: 15px;
 }
-.card{
+
+.card {
     width: 200px;
-    box-shadow: 15px 15px 15px 0 rgb(0,0,0);
+    box-shadow: 15px 15px 15px 0 rgb(0, 0, 0);
     border-radius: 10px;
     float: left;
     margin-left: 50px;
 }
+
 .card img {
     width: 100%;
 }
-.manga-selector{
+
+.manga-selector {
     display: flex;
 }
