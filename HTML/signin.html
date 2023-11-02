@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studub</title>
-    <link rel="stylesheet" href="../CSS/Template.css" />
+    <link rel="stylesheet" href="../CSS/signin.css" />
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             </div>
             <div class="menu-main">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="..\index.html">Home</a></li>
                     <li><a href="">WIP</a></li>
                     <li><a href="">Placeholder</a></li>
                     <li><a href="">About us</a></li>
@@ -26,8 +26,8 @@
             </div>
         </div>
         <div class="right-options">
-            
-            <div class = "Regis">
+
+            <div class="Regis">
                 <ul>
                     <li><a href="/HTML/signin.html">Sign in</a></li>
                     <li><a href="">Log in</a></li>
@@ -40,12 +40,21 @@
     </header>
 
     <!-- Body -->
-
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <div class="form__message form__message--error">Incorect Username/Password.</div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username or email">
+                <div class="form__input-error-message">Error!</div>
+            </div>
+        </form>
+    </div>
     <!-- Footer -->
     <footer>
         <h1>Copyright © 2023</h1>
     </footer>
-    
+
 </body>
 
 </html>
