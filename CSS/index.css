@@ -12,6 +12,11 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color for login.html */
+    --color-error: #cc3333;
+    --color-success: #4bb544;
 }
 
 /* Header shenanigans */
@@ -155,15 +160,50 @@ footer h1 {
     background-image: url("../IMG/cool-background.png");
     background-color: rgb(221, 221, 221);
 }
+/* start of login.html bs */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    width: 400px;
+    max-width: 400px;
     margin: 100px;
+    padding: 110px;
     color: black;
-    font-size: 40px;
+    /* box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius); */
+    font-size: 30px;
 }
+.container,
+.form__input,
+.form__button {
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+.form > *:first-child {
+    margin-top: 0;
+}
+.form > *:last-child {
+    margin-bottom: 0;
+}
+.form__title{
+    text-align: center;
+    margin-bottom:2rem;
+}
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form__message--success{
+    color: var(--color-success);
+}
+.form__message--error{
+    color: var(--color-error);
+}
+.form__input-group{
+    margin-bottom: 1rem;
+}
+/* end of login.html bs */
 
 .welcome {
     display: flex;
