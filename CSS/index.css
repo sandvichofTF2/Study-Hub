@@ -28,16 +28,13 @@ header {
     text-decoration: none;
 }
 
-.icon img {
+/* .icon img {
     width: 85px;
-}
+} */
 
-.logo {
-    animation-name: spin;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
+/* .logo {
+    
+} */
 
 /* SEARCH */
 .searchbar button img {
@@ -62,23 +59,26 @@ header {
 
 .menu-main {
     display: flex;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-left: 10px;
+    & li{
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+            font-family: 'JetBrains Mono';
+        }
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+    & .icon{
+        padding-right: 50px;
+        font-size: 40px;
+    }
 }
 
 textarea {
     resize: none;
-}
-
-.menu-main li {
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 10px;
-    font-family: 'JetBrains Mono';
-}
-.menu-main a{
-    text-decoration: none;
-    color: white;
 }
 
 .searchbar {
@@ -154,6 +154,15 @@ footer h1 {
     padding: 100px;
     background-image: url("../IMG/cool-background.png");
     background-color: rgb(221, 221, 221);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 100px;
+    color: black;
+    font-size: 40px;
 }
 
 .welcome {
