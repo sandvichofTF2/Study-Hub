@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    /* background: url;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-position: center;  */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color for login.html */
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+    --color-primary: #009579;
+    --color-primary-dark: #007f67;
+    --color-secondary: #252c6a;
+}
+
+/* Header shenanigans */
+header {
+    position: fixed;
+    display: flex;
+    background-color: #006660;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+/* .icon img {
+    width: 85px;
+} */
+
+/* .logo {
+    
+} */
+
+/* SEARCH */
+.searchbar button img {
+    width: 35px;
+}
+
+/* .option img {
+    padding-top: 20px;
+    padding-left: 231px;
+    width: 55px;
+} */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.menu-main {
+    display: flex;
+    /* padding-top: 20px; */
+    padding-left: 10px;
+    & li{
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+            font-family: 'JetBrains Mono';
+        }
+    & a{
+        text-decoration: none;
+        color: white;
+    }
+    & .icon{
+        padding-right: 50px;
+        font-size: 40px;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+.searchbar {
+    display: flex;
+    height: 50px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+/* .searchbar #search{
+        margin-left: 200% !important;
+    } */
+
+.left-options {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right-options {
+    /* flex: -2; */
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    & .option {
+        flex: 1;
+        
+        & img {
+            height: 3rem;
+            width: auto;
+            margin-right: 20px;
+        }
+    }
+    & .Regis li {
+    list-style: none;
+    text-decoration: none;  
+    display: inline-block;
+    margin: 0 10px;
+    font-family: 'JetBrains Mono';
+    text-align: end;
+    
+    }
+    & .Regis a {
+        text-decoration: none;
+    color: white;
+    }
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    bottom: 0px;
+    position: relative;
+    text-align: center;
+    background-color: #006660;
+    color: black;
+    font-size: 7px;
+    margin-top: auto;
+}
+
+footer h1 {
+    text-align: center;
+}
+
+
+/* main body aka content (fetured */
+.test h1 {
+    font-size: 3em;
+}
+
+.contents {
+    padding: 100px;
+    background-image: url("../IMG/cool-background.png");
+    background-color: rgb(221, 221, 221);
+}
+/* start of login.html bs */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 400px;
+    max-width: 400px;
+    margin: 100px;
+    padding: 110px;
+    color: black;
+    /* box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius); */
+    font-size: 30px;
+}
+.container,
+.form__input,
+.form__button {
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+.form > *:first-child {
+    margin-top: 0;
+}
+.form > *:last-child {
+    margin-bottom: 0;
+}
+.form__title{
+    text-align: center;
+    margin-bottom:2rem;
+}
+.form__message{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form__message--success{
+    color: var(--color-success);
+}
+.form__message--error{
+    color: var(--color-error);
+}
+.form__input-group{
+    margin-bottom: 1rem;
+}
+.form__input{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background-color: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+.form__input:focus{
+    border-color: var(--color-primary);
+    background: #ffffff;
+}
+.form__input--error{
+    color: var(--color-error);
+}
+.form__input-error-message{
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+.form__button{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border:none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+}
+.form__button:hover{
+    background: var(--color-primary-dark);
+}
+.form__button:active{
+    transform: scale(0.98);
+}
+/* .form__text{
+    text-align: center;
+} */
+
+.form__link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
+/* end of login.html bs */
+
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 100px;
+    color: black;
+    font-size: 40px;
+}
+
+.featured {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured div.left {
+    width: 50%;
+}
+
+.featured div.right {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.right div.st1,
+.right div.nd2 {
+    width: 50%;
+}
+
+.featured div {
+    margin-right: 20px;
+    height: 100%;
+}
+
+.right img:nth-child(2) {
+    width: 100%;
+}
+
+.right img {
+    padding: 5px;
+    width: 100%
+}
+
+.left img {
+    width: 75%;
+}
+
+/* Content (normal) */
+.manga h3 {
+    text-align: center;
+    color: black;
+}
+
+.manga div.image {
+    display: flex;
+    width: 10%;
+}
+
+.manga div.image img {
+    width: 100%;
+    margin: 15px;
+}
+
+.card {
+    width: 200px;
+    box-shadow: 15px 15px 15px 0 rgb(0, 0, 0);
+    border-radius: 10px;
+    float: left;
+    margin-left: 50px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.manga-selector {
+    display: flex;
+}
