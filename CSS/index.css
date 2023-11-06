@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap');
 body {
     margin: 0;
     background-color: whitesmoke;
@@ -70,6 +70,10 @@ header {
     display: flex;
     /* padding-top: 20px; */
     padding-left: 10px;
+    & ul{
+        display: flex;
+        align-items: center;
+    }
     & li{
             text-decoration: none;
             display: inline-block;
@@ -83,6 +87,7 @@ header {
     & .icon{
         padding-right: 50px;
         font-size: 40px;
+        font-family: 'Edu TAS Beginner';
     }
 }
 
@@ -275,76 +280,29 @@ footer h1 {
     margin: 100px;
     color: black;
     font-size: 40px;
-}
-
-.featured {
-    display: flex;
-    justify-content: space-between;
-}
-
-.featured div.left {
-    width: 50%;
-}
-
-.featured div.right {
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-
-.right div.st1,
-.right div.nd2 {
-    width: 50%;
-}
-
-.featured div {
-    margin-right: 20px;
-    height: 100%;
-}
-
-.right img:nth-child(2) {
-    width: 100%;
-}
-
-.right img {
-    padding: 5px;
-    width: 100%
-}
-
-.left img {
-    width: 75%;
-}
-
-/* Content (normal) */
-.manga h3 {
     text-align: center;
-    color: black;
 }
-
-.manga div.image {
-    display: flex;
-    width: 10%;
+.ptext{
+    font-size: 20px;
+    font-family: 'Open Sans';
 }
-
-.manga div.image img {
+.dropdownList {
+    display: none;
+    position: absolute;
     width: 100%;
-    margin: 15px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-
-.card {
-    width: 200px;
-    box-shadow: 15px 15px 15px 0 rgb(0, 0, 0);
-    border-radius: 10px;
-    float: left;
-    margin-left: 50px;
+.dropdown:hover .dropdownList {
+    display: block;
 }
-
-.card img {
-    width: 100%;
+.dropdownList a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
 }
-
-.manga-selector {
-    display: flex;
+.dropdownList a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
 }
