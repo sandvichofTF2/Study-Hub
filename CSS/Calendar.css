@@ -236,13 +236,14 @@ body{
   padding: 0 10px;
   justify-content: center;
   min-height: 100vh;
-  background: #9B59B6;
+  background: #ffffff;
 }
 .wrapper{
   width: 450px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  outline: 2px black;
 }
 .wrapper header{
   display: flex;
