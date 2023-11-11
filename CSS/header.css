@@ -132,7 +132,7 @@ textarea {
     display: block;
 }
 
-.navbar li:hover ul {
+.navbar .dropdown:hover ul {
     display: block;
 }
 
