@@ -96,8 +96,11 @@ footer {
     text-align: center;
     background-color: #006660;
     color: black;
-    font-size: 7px;
+    font-size: 9px;
     margin-top: auto;
+    border-width: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 footer h1 {
@@ -107,7 +110,7 @@ footer h1 {
 
 /* main body aka content (fetured */
 body {
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.671), 0.747);
     /* background: url;
         background-size: cover;
         background-repeat: no-repeat;
