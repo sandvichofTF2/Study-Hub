@@ -1,0 +1,16 @@
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 100px;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+.ptext {
+    font-size: 20px;
+    font-family: 'Open Sans';
+    text-align: center;
+}

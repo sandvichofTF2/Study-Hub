@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    /* background: url;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-position: center;  */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color for login.html */
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+    --color-primary: #009579;
+    --color-primary-dark: #007f67;
+    --color-secondary: #252c6a;
+}

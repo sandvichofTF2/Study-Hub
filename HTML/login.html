@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studub</title>
+    <link rel="stylesheet" href="../CSS/signlogin.css" />
+    <link rel="stylesheet" href="../CSS/body.css" />
+    <link rel="stylesheet" href="../CSS/header.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="left-options">
+            <nav class="menu-main">
+                <ul>
+                    <li class="icon"><a href="../index.html">Studub</a></li>
+                    <!-- <li><a href="HTML/404.html">Calender</a></li> -->
+                    <!-- <li><a href="HTML/404.html">Quizizz-mator</a></li> -->
+                    <!-- <li><a href="HTML/404.html">Functions</a></li> -->
+                    <li><a href="404.html">About us</a></li>
+                    <nav class="navbar">
+                        <ul>
+                            <li>
+                                <a href="">Functions ></a>
+                                    <ul>
+                                            <li><a href="Calendar.html">Calendar</a></li>
+                                            <li><a href="404.html">Quizizz-mator</a></li>
+                                            <li><a href="notepad.html">Notice Board</a></li>
+                                    </ul>
+                            </li>
+                        </ul>
+                        
+                    </nav>
+                </ul>
+            </nav>
+        </div>
+        <div class="right-options">
+
+            <div class="Regis">
+                <ul>
+                    <li><a href="signup.html">Sign in</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                </ul>
+            </div>
+            <!-- <div class="option">
+                <img src="../IMG/settings_gear_options_option_icon-icons.com_59985.png" alt />
+            </div> -->
+        </div>
+    </header>
+
+    <!-- Body -->
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <div class="form__message form__message--error">
+                <!-- Incorect Username/Password. -->
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username or email">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="Submit">Continue</button>
+            <p class="form__text">
+                <a href="404.html" class="form__link">Forgot your password?</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" id="linkSignup">No account? Create account.</a>
+            </p>
+        </form>
+        <form class="form form--hidden" id="Signup">
+            <h1 class="form__title">Create Your Account</h1>
+            <div class="form__message form__message--error">
+                <!-- Incorect Username/Password. -->
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Your Email">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Create your password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Confirm your password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="Submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" id="linkLogin">Already have an account? Log in.</a>
+            </p>
+        </form>
+    </div>
+    <script src="../JS/login.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <h1>Copyright © 2023</h1>
+    </footer>
+
+</body>
+
+</html>
