@@ -1,21 +1,16 @@
-.welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    margin: 100px;
-    color: black;
-    font-size: 40px;
-    text-align: center;
+body {
+    margin: 0;
+    background: #009578;
 }
-#app {
+
+#app{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, 200px);
     padding: 24px;
     gap: 24px;
 }
-  
-.note {
+
+.note{
     height: 200px;
     box-sizing: border-box;
     padding: 16px;
@@ -23,23 +18,21 @@
     border-radius: 10px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
     resize: none;
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
 }
-  
-.add-note {
+.add-note{
     height: 200px;
     border: none;
     outline: none;
-    resize: none;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    font-size: 120px;
+    font-size: 12px;
     color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: background 0.2s;
 }
-  
-.add-note:hover {
+
+.add-note:hover{
     background: rgba(0, 0, 0, 0.2);
 }
