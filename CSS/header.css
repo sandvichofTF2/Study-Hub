@@ -12,6 +12,7 @@ header {
     font-size: 20px;
     color: white;
     text-decoration: none;
+    z-index: 999;
 }
 .menu-main {
     display: flex;
