@@ -41,8 +41,8 @@ input:focus, textarea:focus, button:focus {
     background-color: #fbfbfb;
     color: #5a5a5a;
     width: 100%;
-    -webkit-box-shadow: 0 10px 50px -20px #25cbe4;
-            box-shadow: 0 10px 50px -20px #28bbce;
+    -webkit-box-shadow: 0 10px 50px -20px #216583;
+            box-shadow: 0 10px 50px -20px #216583;
     margin: 0 auto;
     overflow: hidden;
     z-index: 1;
@@ -54,11 +54,11 @@ input:focus, textarea:focus, button:focus {
     width: 200px;
     height: 100%;
     float: left;
-    background-color: #37a7d0;
+    background-color: #216583;
     color: #fff;
     z-index: 1;
-    -webkit-box-shadow: 5px 0 18px -3px #388cad;
-            box-shadow: 5px 0 18px -3px #3379a7;
+    -webkit-box-shadow: 5px 0 18px -3px #216583;
+            box-shadow: 5px 0 18px -3px #216583;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
@@ -84,11 +84,11 @@ input:focus, textarea:focus, button:focus {
     -webkit-transform: translate(100%, 0);
         -ms-transform: translate(100%, 0);
             transform: translate(100%, 0);
-    background-color: #28d0ed;
+    background-color: #216583;
     padding: 10px 8px;
     cursor: pointer;
-    -webkit-box-shadow: 5px 0 18px -3px #44dbe9;
-            box-shadow: 5px 0 18px -3px #1f96be;
+    -webkit-box-shadow: 5px 0 18px -3px #216583;
+            box-shadow: 5px 0 18px -3px #216583;
 }
 
 .calendar-sidebar > .calendar-year {
@@ -143,10 +143,10 @@ input:focus, textarea:focus, button:focus {
     font-size: 16px;
 }
 .calendar-sidebar > .month-list > .calendar-months > li:hover {
-    background-color: #47a8dd;
+    background-color: #216583;
 }
 .calendar-sidebar > .month-list > .calendar-months > li.active-month {
-    background-color: #23adb4;
+    background-color: #216583;
 }
 
 .calendar-inner {
