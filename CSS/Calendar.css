@@ -1,15 +1,4 @@
-/*!
- * Evo Calendar - Simple and Modern-looking Event Calendar Plugin
- *
- * Licensed under the MIT License
- *
- * Version: 1.1.2
- * Author: Edlyn Villegas
- * Docs: https://edlynvillegas.github.com/evo-calendar
- * Repo: https://github.com/edlynvillegas/evo-calendar
- * Issues: https://github.com/edlynvillegas/evo-calendar/issues
- *
-*/
+
 .welcome {
     display: flex;
     width: 100%;
@@ -198,7 +187,7 @@ th[colspan="7"] {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 30px;
-    color: #32bbc7;
+    color: #216583;
 }
 th[colspan="7"]::after {
     content: '';
@@ -261,11 +250,11 @@ tr.calendar-body .calendar-day .day.calendar-active:hover {
 
 tr.calendar-body .calendar-day .day.calendar-today {
     color: #fff;
-    background-color: #36a5c6;
+    background-color: #216583 ;
 }
 tr.calendar-body .calendar-day .day.calendar-today:hover {
     color: #fff;
-    background-color: #3fb1c6;
+    background-color: #216583;
 }
 tr.calendar-body .calendar-day .day[disabled] {
     pointer-events: none;
@@ -315,11 +304,11 @@ tr.calendar-body .calendar-day .day[disabled] {
     height: 40px;
     top: 0;
     right: 0;
-    background-color: #8773c1;
+    background-color: #3205b8;
     padding: 10px;
     cursor: pointer;
-    -webkit-box-shadow: 5px 0 18px -3px #8773c1;
-            box-shadow: 5px 0 18px -3px #8773c1;
+    -webkit-box-shadow: 5px 0 18px -3px #430ee4;
+            box-shadow: 5px 0 18px -3px #3c0fc2;
     z-index: 1;
 }
 .event-list::after {
@@ -330,11 +319,11 @@ tr.calendar-body .calendar-day .day[disabled] {
 .event-list > .event-empty {
     padding: 15px 10px;
     background-color: rgba(135,115,193,.15);
-    border: 1px solid #3eacb6;
+    border: 1px solid #216583;
 }
 .event-list > .event-empty > p {
     margin: 0;
-    color: #44a1c1;
+    color: #216583;
 }
 .event-container {
     position: relative;
@@ -424,8 +413,8 @@ tr.calendar-body .calendar-day .day[disabled] {
     right: 0;
     font-size: 12px;
     font-weight: normal;
-    color: #755eb5;
-    border: 1px solid #755eb5;
+    color: #216583;
+    border: 1px solid #216583;
     border-radius: 3px;
     background-color: rgb(237 234 246);
     padding: 3px 6px;
@@ -466,7 +455,7 @@ tr.calendar-body .calendar-day .day[disabled] {
 /* fallback color */
 .event-container > .event-icon > div[class^="event-bullet-"],
 .event-indicator > .type-bullet > div[class^="type-"] {
-    background-color: #8773c1;
+    background-color: #216583;
 }
 .event-container > .event-icon > div.event-bullet-event,
 .event-indicator > .type-bullet > div.type-event {
@@ -478,7 +467,7 @@ tr.calendar-body .calendar-day .day[disabled] {
 }
 .event-container > .event-icon > div.event-bullet-birthday,
 .event-indicator > .type-bullet > div.type-birthday {
-    background-color: #3ca8ff;
+    background-color: #216583;
 }
 
 
@@ -781,7 +770,7 @@ button.icon-button > span.chevron-arrow-right {
         position: relative;
         padding: 10px 20px;
         text-align: center;
-        background-color: #8773c1;
+        background-color: #216583;
         -webkit-box-shadow: 0 3px 8px -3px rgba(53, 43, 80, 0.65);
                 box-shadow: 0 3px 8px -3px rgba(53, 43, 80, 0.65);
     }
@@ -802,7 +791,7 @@ button.icon-button > span.chevron-arrow-right {
         width: 100%;
         height: calc(100% - 43px);
         overflow-y: auto;
-        background-color: #8773c1;
+        background-color: #216583;
         -webkit-transform: translateY(0);
             -ms-transform: translateY(0);
                 transform: translateY(0);
