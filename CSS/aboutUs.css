@@ -11,3 +11,25 @@
 .welcome .titleline{
     margin-top: 200px;
 }
+.ptext{
+    font-size:22px;
+    text-align: center;
+    & .smoggs{
+        height: 10%;
+        width: 40%;
+        border-radius: 50%;
+        border: 5px solid black;
+    }
+    & .vini{
+        height: 10%;
+        width: 40%;
+        border-radius: 50%;
+        border: 5px solid black;
+    }
+    & .tkhoa{
+        height: 10%;
+        width: 40%;
+        border-radius: 50%;
+        border: 5px solid black;
+    }
+}
