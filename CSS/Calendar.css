@@ -234,7 +234,7 @@ tr.calendar-body .calendar-day .day {
     cursor: pointer;
 }
 tr.calendar-body .calendar-day .day:hover {
-    background-color: #dadada;
+    background-color: #93dae4;
 }
 tr.calendar-body .calendar-day .day:active {
     -webkit-transform: scale(0.9);
