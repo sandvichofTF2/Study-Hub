@@ -974,6 +974,14 @@ button.icon-button > span.chevron-arrow-right {
             -ms-transform: translate(0, -3px) rotate(45deg);
                 transform: translate(0, -3px) rotate(45deg);
     }
+    .footer-container .btn-action {
+        background-image: -o-linear-gradient(45deg, #6ac1c5, #bda5ff);
+        background-image: linear-gradient(45deg, #6ac1c5, #bda5ff);
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: #fff;
+    }
 }
 @media screen and (max-width: 375px) {
     th[colspan="7"] {
