@@ -12,24 +12,70 @@
     margin-top: 200px;
 }
 .ptext{
+    margin: 5px;
     font-size:22px;
     text-align: center;
-    & .smoggs{
-        height: 10%;
-        width: 40%;
-        border-radius: 50%;
-        border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    & .Long{
+        display: block;
+        margin-bottom: 15px;
+        & .smoggs{
+            height: 10%;
+            width: 30%;
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+        
     }
-    & .vini{
-        height: 10%;
-        width: 40%;
-        border-radius: 50%;
-        border: 5px solid black;
+    & .Vinh{
+        display: block;
+        margin-bottom: 15px;
+        & .vini{
+            height: 10%;
+            width: 30%;
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+        
     }
-    & .tkhoa{
-        height: 10%;
-        width: 40%;
-        border-radius: 50%;
-        border: 5px solid black;
+    & .Khoa{
+        display: block;
+        margin-bottom: 15px;
+        & .tkhoa{
+            height: 10%;
+            width: 30%;
+            border-radius: 50%;
+            border: 5px solid black;
+        }
     }
+    
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
