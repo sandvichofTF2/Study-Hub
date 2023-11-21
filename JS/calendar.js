@@ -1127,22 +1127,3 @@
         return _;
     };
 }));
-$("[data-set-theme]").click(function(b) {
-    a(b.target);
-});
-$("#addBtn").click(function(a) {
-    curAdd = getRandom(events.length);
-    $("#demoEvoCalendar").evoCalendar("addCalendarEvent", events[curAdd]);
-    active_events.push(events[curAdd]);
-    events.splice(curAdd, 1);
-    if (0 === events.length) a.target.disabled = !0;
-    if (active_events.length > 0) $("#removeBtn").prop("disabled", !1);
-});
-$("#removeBtn").click(function(a) {
-    curRmv = getRandom(active_events.length);
-    $("#demoEvoCalendar").evoCalendar("removeCalendarEvent", active_events[curRmv].id);
-    events.push(active_events[curRmv]);
-    active_events.splice(curRmv, 1);
-    if (0 === active_events.length) a.target.disabled = !0;
-    if (events.length > 0) $("#addBtn").prop("disabled", !1);
-});
