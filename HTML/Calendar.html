@@ -67,10 +67,18 @@
             })
         </script>
         </div>
-        <div class="action-buttons">
-            <button class="btn-action" id="addBtn">ADD EVENT</button>
-            <button class="btn-action" id="removeBtn" disabled>REMOVE EVENT</button>
-        </div>
+        <div id="modal"></div>
+        <div id="addEvent">
+            <h2>Add Event</h2>
+            <input type="text" id="txtTitle" placeholder="Event Title" />
+            <button id="btnSave">Save</button>
+            <button class="btnClose">Close</button>
+          </div>
+          <div id="viewEvent">
+            <h2>Event</h2>
+            <button id="btnDelete">Delete</button>
+            <button class="btnClose">Close</button>
+          </div>
     <!-- Footer -->
     <footer>
         <h1>Copyright © 2023</h1>
