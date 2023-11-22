@@ -940,82 +940,6 @@
         }
     };
 
-    // v1.0.0 - Add Calendar Event(s)
-    EvoCalendar.prototype.addCalendarEvent = function(arr) {
-        var _ = this;
-
-        function addEvent(data) {
-            if(!data.id) {
-                console.log("%c Event named: \""+data.name+"\" doesn't have a unique ID ", "color:white;font-weight:bold;background-color:#e21d1d;");
-            }
-
-            if (data.date instanceof Array) {
-                for (var j=0; j < data.date.length; j++) {
-                    if(isDateValid(data.date[j])) {
-                        data.date[j] = _.formatDate(new Date(data.date[j]), _.options.format);
-                    }
-                }
-            } else {
-                if(isDateValid(data.date)) {
-                    data.date = _.formatDate(new Date(data.date), _.options.format);
-                }
-            }
-            
-            if (!_.options.calendarEvents) _.options.calendarEvents = [];
-            _.options.calendarEvents.push(data);
-            // add to date's indicator
-            _.addEventIndicator(data);
-            // add to event list IF active.event_date === data.date
-            if (_.$active.event_date === data.date) _.addEventList(data);
-            // _.$elements.innerEl.find("[data-date-val='" + data.date + "']")
-
-            function isDateValid(date) {
-                if(_.isValidDate(date)) {
-                    return true;
-                } else {
-                    console.log("%c Event named: \""+data.name+"\" has invalid date ", "color:white;font-weight:bold;background-color:#e21d1d;");
-                }
-                return false;
-            }
-        }
-        if (arr instanceof Array) { // Arrays of events
-            for(var i=0; i < arr.length; i++) {
-                addEvent(arr[i])
-            }
-        } else if (typeof arr === 'object') { // Single event
-            addEvent(arr)
-        }
-    };
-
-    // v1.0.0 - Remove Calendar Event(s)
-    EvoCalendar.prototype.removeCalendarEvent = function(arr) {
-        var _ = this;
-
-        function deleteEvent(data) {
-            // Array index
-            var index = _.options.calendarEvents.map(function (event) { return event.id }).indexOf(data);
-            
-            if (index >= 0) {
-                var event = _.options.calendarEvents[index];
-                // Remove event from calendar events
-                _.options.calendarEvents.splice(index, 1);
-                // remove to event list
-                _.removeEventList(data);
-                // remove event indicator
-                _.removeEventIndicator(event);
-            } else {
-                console.log("%c "+data+": ID not found ", "color:white;font-weight:bold;background-color:#e21d1d;");
-            }
-        }
-        if (arr instanceof Array) { // Arrays of index
-            for(var i=0; i < arr.length; i++) {
-                deleteEvent(arr[i])
-            }
-        } else { // Single index
-            deleteEvent(arr)
-        }
-    };
-
     // v1.0.0 - Check if date is valid
     EvoCalendar.prototype.isValidDate = function(d){
         return new Date(d) && !isNaN(new Date(d).getTime());
@@ -1039,3 +963,75 @@
     };
 }));
 
+function buttons() {
+    const btnBack = document.querySelector("#btnBack");
+    const btnNext = document.querySelector("#btnNext");
+    const btnDelete = document.querySelector("#btnDelete");
+    const btnSave = document.querySelector("#btnSave");
+    const closeButtons = document.querySelectorAll(".btnClose");
+    const txtTitle = document.querySelector("#txtTitle");
+  
+    btnBack.addEventListener("click", () => {
+      navigation--;
+      loadCalendar();
+    });
+    btnNext.addEventListener("click", () => {
+      navigation++;
+      loadCalendar();
+    });
+    modal.addEventListener("click", closeModal);
+    closeButtons.forEach((btn) => {
+      btn.addEventListener("click", closeModal);
+    });
+    btnDelete.addEventListener("click", function () {
+      events = events.filter((e) => e.date !== clicked);
+      localStorage.setItem("events", JSON.stringify(events));
+      closeModal();
+    });
+  
+    btnSave.addEventListener("click", function () {
+      if (txtTitle.value) {
+        txtTitle.classList.remove("error");
+        events.push({
+          date: clicked,
+          title: txtTitle.value.trim(),
+        });
+        txtTitle.value = "";
+        localStorage.setItem("events", JSON.stringify(events));
+        closeModal();
+      } else {
+        txtTitle.classList.add("error");
+      }
+    });
+  }
+  
+  const modal = document.querySelector("#modal");
+  const viewEventForm = document.querySelector("#viewEvent");
+  const addEventForm = document.querySelector("#addEvent");
+  
+  function showModal(dateText) {
+    clicked = dateText;
+    const eventOfTheDay = events.find((e) => e.date == dateText);
+    if (eventOfTheDay) {
+      //Event already Preset
+      document.querySelector("#eventText").innerText = eventOfTheDay.title;
+      viewEventForm.style.display = "block";
+    } else {
+      //Add new Event
+      addEventForm.style.display = "block";
+    }
+    modal.style.display = "block";
+  }
+  
+  //Close Modal
+  function closeModal() {
+    viewEventForm.style.display = "none";
+    addEventForm.style.display = "none";
+    modal.style.display = "none";
+    clicked = null;
+    loadCalendar();
+  }
+  
+
+  buttons();
+  
